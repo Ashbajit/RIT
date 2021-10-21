@@ -1,2 +1,2 @@
-# RIT
-This repository is for hosting assignments and college projects for easy sharing and understanding.
+# Digital Image Processing
+Digital Image Processing notes and assignments
