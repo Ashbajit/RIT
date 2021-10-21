@@ -23,17 +23,17 @@ bw = im2bw(original);
 imshow(bw);
 
 % To see RGB composition of picture
-%show redband
+%show redband : in the plot white portion represents the redband
 subplot(2, 3, 4);
 redband = original(:, :, 1);
 imshow(redband);
 
-%show redband
+%show greenband : in the plot white portion represents the greenband
 subplot(2, 3, 5);
 greenband = original(:, :, 2);
 imshow(greenband);
 
-%show redband
+%show blueband : in the plot white portion represents the blueband
 subplot(2, 3, 6);
 blueband = original(:, :, 3);
 imshow(blueband);
