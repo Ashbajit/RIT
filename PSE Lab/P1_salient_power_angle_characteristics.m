@@ -1,12 +1,16 @@
 % Plot power angle characteristics of salient pole machine
+
 % Q. A salient pole synchronous machine has following parameters. Zero
 % armature resistance, direct axis reactance of 1 p.u., quadrature ais
 % reactance of 0.6 p.u. , terminal voltage of 1 p.u., unity power factor
 % and induced emf of 1.1 p.u. Write a program to obtain power angle
 % characteristics of machine.
+
 clc;
 clear all;
+
 %Initial parameter values
+
 Ra = 0; %Armature resistance
 Xd = 1; %Direct axis reactance
 Xq = 0.6; %Quadrature axis reactance
@@ -17,6 +21,7 @@ delta = 0:1:180; %delta varying from 0 to 180 degrees
 del_rad = delta .* pi / 180; %converting to degrees
 
 %Power calculations
+
 Pm1 = (abs(E) .* abs(Vt)) / Xd;
 y1 = Pm1 .* sin(del_rad); % power
 Pm2 = ((Vt.^2) .* (Xd - Xq)) / (2 .* Xd .* Xq);
