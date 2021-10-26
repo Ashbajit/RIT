@@ -24,7 +24,7 @@ del_rad = delta .* pi / 180; %conversion to radians
 phi = acos(Pf); %From power factor
 
 I = P / (Vt .* Pf);
-Ia = (I .* Pf) - (I .* sin(phi));
+Ia = (I.*Pf)-((I.*sin(phi))*1i);
 Z = complex(Ra, Xs);
 E = Vt + (Ia .* Z);
 
