@@ -1,7 +1,7 @@
-% Plot Power - angle characteristics of salient pole machine
+% Plot Power - angle characteristics of non-salient pole machine
 
 % Q. A non- salient pole synchronous machine has the following parameters,
-% zero armature resistance, synchronous reactance, of 0.e p.u. , terminal
+% zero armature resistance, synchronous reactance, of 0.3 p.u. , terminal
 % voltage of 1 p.u. , power factor of 0.8 and power of 0.5 p.u.. Write a
 % program to obtain the power angle characteristics of machine.
 
@@ -35,4 +35,4 @@ P_t = Pm .* sin(del_rad);
 plot(delta, P_t);
 xlabel('Delta(degrees)');
 ylabel('Power(pu)');
-title('Power angle characteristics of salient pole machine');
+title('Power angle characteristics of non-salient pole machine');

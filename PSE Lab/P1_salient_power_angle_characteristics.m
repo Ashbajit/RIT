@@ -23,9 +23,9 @@ del_rad = delta .* pi / 180; %converting to degrees
 %Power calculations
 
 Pm1 = (abs(E) .* abs(Vt)) / Xd;
-y1 = Pm1 .* sin(del_rad); % power
+y1 = Pm1 .* sin(del_rad); % Real power
 Pm2 = ((Vt.^2) .* (Xd - Xq)) / (2 .* Xd .* Xq);
-y2 = Pm2 .* sin(2 .* del_rad); % power
+y2 = Pm2 .* sin(2 .* del_rad); % Reluctance power
 P = y1 + y2; %Total power
 
 %Plot
@@ -38,4 +38,4 @@ plot(delta, y2, 'm')
 xlabel('Delta(degrees)-->');
 ylabel('Power(pu)-->');
 title('Power-angle characteristics of salient pole machine');
-legend('P', 'Pm1sin(delta)', 'Pm2sin(2delta)');
+legend('Total power', 'Real power', 'Reluctance power');
